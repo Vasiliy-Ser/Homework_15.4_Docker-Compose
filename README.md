@@ -39,9 +39,12 @@
 
 Решение:
 
+По умолчанию Docker Compose ищет файл с именем compose.yaml или docker-compose.yaml. В данном случае будет запущен файл compose.yaml, так как он имеет приоритет по умолчанию.
 
 ![answer5](https://github.com/Vasiliy-Ser/Homework_15.4_Docker-Compose/blob/efb0fc31439e7ccbdbd7f50d2d9486d4d7d8e7cc/png/5.png)
 ![answer5.1](https://github.com/Vasiliy-Ser/Homework_15.4_Docker-Compose/blob/efb0fc31439e7ccbdbd7f50d2d9486d4d7d8e7cc/png/5.1.png)
 ![answer5.2](https://github.com/Vasiliy-Ser/Homework_15.4_Docker-Compose/blob/efb0fc31439e7ccbdbd7f50d2d9486d4d7d8e7cc/png/5.2.png)
 ![answer5.3](https://github.com/Vasiliy-Ser/Homework_15.4_Docker-Compose/blob/efb0fc31439e7ccbdbd7f50d2d9486d4d7d8e7cc/png/5.3.png)
 ![answer5.4](https://github.com/Vasiliy-Ser/Homework_15.4_Docker-Compose/blob/efb0fc31439e7ccbdbd7f50d2d9486d4d7d8e7cc/png/5.4.png)
+
+Получаем предупреждение о том, что файл compose.yaml отсутствует, и будет использован только docker-compose.yaml. Это связано с тем, что Docker Compose пытается найти все указанные файлы, и если один из них отсутствует, он продолжает работу с оставшимися.
